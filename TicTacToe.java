@@ -9,13 +9,17 @@ public class TicTacToe extends JFrame {
     XOButton listener=new XOButton();
     public static void main(String[] args) {
 
-        TicTacToe f=new TicTacToe();
+        new TicTacToe();
     }
+        /**************************************DRAW GRAPHICS OF GAME********************************************/
+
     public TicTacToe(){
         setTitle("TicTacToe");
         setSize(400,400);
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        /****************************************DRAW BUTTONS IN GRIDS********************************************/
+
         p.setLayout(new GridLayout(3,3));
         for(int i=0;i<9;i++)
         {
