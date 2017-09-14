@@ -39,6 +39,7 @@ public class XOButton  implements ActionListener {
         }
         if(value==10){
             JOptionPane.showMessageDialog(null,"Game Draw");
+            new TicTacToe();
         }
 
         
