@@ -17,7 +17,7 @@ public class XOButton  implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         JButton b =(JButton)e.getSource();
-
+        /***********************************CHECK WHOSE TURN IT IS*********************************************/
         if(b.getIcon()==null){
         if (value%2!=0) {
             b.setIcon(X);
@@ -37,6 +37,7 @@ public class XOButton  implements ActionListener {
             new TicTacToe();
 
         }
+       /********************************************CHECK FOR DRAW*****************************************/
         if(value==10){
             JOptionPane.showMessageDialog(null,"Game Draw");
             new TicTacToe();
@@ -44,6 +45,7 @@ public class XOButton  implements ActionListener {
 
         
         }
+     /**************************************CHECK WINNER******************************************************/
     boolean checkWinner()
 
     {
